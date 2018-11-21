@@ -1,0 +1,12 @@
+covoiturage:
+    resource: "@CovoiturageBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+main:
+    resource: "@MainBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,24 @@
+{% extends "@Covoiturage/layoutadmin.html.twig" %}
+ {% block contenu %}
+<div class="container">
+<div style="display:flex;justify-content: space-around">
+<div>
+
+    {{ render(controller("CovoiturageBundle:Admin:StatGouvernorat")) }}
+</div>
+<div>
+
+    {{ render(controller("CovoiturageBundle:Admin:TypeAnnonce")) }}
+</div>
+
+
+</div>
+     <br>
+     <br>
+    <div style="display:flex;justify-content: space-around">
+
+        {{ render(controller("CovoiturageBundle:Admin:ReclGouvernorat")) }}
+
+    </div>
+</div>
+ {% endblock %}
